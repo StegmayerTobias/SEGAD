@@ -1,0 +1,158 @@
+html, body{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+:root{
+  --color1:#182737;
+  --cadetBlue: #5f9ea0;
+  --color3: #25353b;
+  --aliceBlue:#F5F9FA;
+  --ceruleanFrost: #6096BA;
+  --liberty: #5158A4;
+  --babyBlueEyes: #A3CEF1; 
+  --pewterBlue: #9AB6CA;
+  --cadetGrey: #919DA3;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+	margin:0;
+	padding:0;
+	background-image:url(img/segad-portada.jpg);
+  background-repeat: no-repeat;
+  background-position: 0px -100px;
+  min-height: 100vh;
+
+}
+
+header{
+	display: flex;
+	height: 10vh;
+	justify-content: center;
+  position:relative;
+}
+
+a{
+  text-decoration: none;
+  color: var(--color3)
+}
+
+footer{
+  background-color: var(--color1);
+  height: 20em;
+}
+
+.items-header{
+  display: flex;
+  gap: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  padding-right: 10px;
+
+}
+.items-header a{
+  color:white;
+  
+}
+.underline{
+  display: inline-block;
+  position:relative
+}
+.underline::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color:var(--color3);
+  transform:scalex(0);
+  transform-origin: bottom right;
+  transition: transform 0.6s ease-out;
+}
+
+.items-header a:hover{
+  color: skyblue;
+  transition: all 0.3s ease-out;
+}
+.underline:hover:after{
+  background-color:skyblue ;
+  transform:scalex(1);
+  transform-origin: bottom left;
+}
+
+.contenedor-logo{
+	display:flex;
+	align-items:center;
+}
+#img-logo{
+  height: 60px;
+  margin-right: 10px;
+}
+.nombre-empresa{
+	color:white;
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.formato{
+	display:flex;
+	justify-content: center;
+  
+}
+
+.contenedor-header{
+	display: flex;
+	height: 100%;
+	width: 1200px;
+	align-items:center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding:0 50px;
+}
+
+.contenedor{
+	display: flex;
+	height: 400px;
+	width: 1200px;
+	align-items:center;
+	flex-wrap: wrap;
+	justify-content:center;
+	padding:20px 50px;
+}
+.contenedor-titulo{
+  display: flex;
+	max-height: 90vh;
+	width: 1200px;
+	padding: 60px 50px ;
+}
+
+.titulo-principal{
+  color: white; 
+  font-size:50px;
+  flex-wrap: wrap;
+  font-weight: 600;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  align-content: center;
+  justify-content: left;
+  width: 550px;
+} 
+
+.quote{
+  border-left:4px solid white;
+  border-spacing: 10px;
+  font-size:21px;
+  padding: 0 0 0 15px;
+}
+
+
+ 
+ 
+ 
